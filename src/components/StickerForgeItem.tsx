@@ -18,7 +18,7 @@ function esc(value: string) {
 }
 
 export function stickerSource(sticker: StickerDefinition): string {
-  if (sticker.asset.kind === 'image') return sticker.asset.src;
+  if (sticker.asset.kind === 'image') return new URL(sticker.asset.src, document.baseURI).href;
   const { text, background, color, fontSize } = sticker.asset;
   const lines: string[] = [];
   const maxChars = Math.max(18, Math.floor((sticker.width - 42) / (fontSize * .55)));
