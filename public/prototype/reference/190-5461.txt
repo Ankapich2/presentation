@@ -1,0 +1,1058 @@
+const imgPresetDefaultSizeMDefaultStateDefaultActiveTrue = "https://www.figma.com/api/mcp/asset/3c168dd0-4a90-45da-b429-4ebfbda9ee70.svg";
+const imgPresetDefaultSizeMDefaultStateDefaultActiveFalse = "https://www.figma.com/api/mcp/asset/9c91f35b-9e46-4da4-be00-3d5aa6ac30cd.svg";
+const imgAds = "https://www.figma.com/api/mcp/asset/c7738ef3-4be1-49b1-99eb-baaf33502160.svg";
+const imgColoredFalse = "https://www.figma.com/api/mcp/asset/52ea621c-73d8-4684-88db-52069743a94a.svg";
+const imgColoredTrue = "https://www.figma.com/api/mcp/asset/1e80cfff-1b82-4201-8fa0-c19e155b2a4f.svg";
+const imgFavorites = "https://www.figma.com/api/mcp/asset/b6a51d50-2ba3-4ff9-963b-a13b07034d11.svg";
+const imgChat = "https://www.figma.com/api/mcp/asset/50f969af-6045-444e-a035-072e4fc0ffb7.svg";
+const img = "https://www.figma.com/api/mcp/asset/a2ce25c8-7be8-4f55-ae94-c2fb48a264d2.svg";
+const img1 = "https://www.figma.com/api/mcp/asset/c863fcc4-3b7e-4b18-a4c6-233deeead922.svg";
+const imgVerified = "https://www.figma.com/api/mcp/asset/dd4375d0-fddd-4730-bec9-2dd473cad532.svg";
+const imgIcon = "https://www.figma.com/api/mcp/asset/8cd01756-9e41-4ce8-bd1a-4077394b8bd5.svg";
+const imgElementsMetroLine = "https://www.figma.com/api/mcp/asset/68b1bb99-98c4-48e0-a37a-ef3895b6303b.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/fff4fd15-5b9b-48c1-a9de-8b38fc194084.svg";
+const imgSize20ProductCommon = "https://www.figma.com/api/mcp/asset/9034edae-0d87-460d-ab55-3ba57247dbfd.svg";
+const imgLocation = "https://www.figma.com/api/mcp/asset/a3a9fd6f-b5aa-4b35-8aa2-3b017e6b8957.svg";
+const imgLens = "https://www.figma.com/api/mcp/asset/3123d7ce-31a1-4a42-a91a-d2e5d8795536.svg";
+const imgNetwork = "https://www.figma.com/api/mcp/asset/0b48a4e2-f739-47e0-96fe-e5cb181f598f.svg";
+const imgData = "https://www.figma.com/api/mcp/asset/07d6c66e-37ca-4e59-99ec-6c8b1e5ebab3.svg";
+const imgBattery = "https://www.figma.com/api/mcp/asset/7e5e9f56-7ba8-4354-b176-d1a77bce5360.svg";
+const imgIcon2 = "https://www.figma.com/api/mcp/asset/88c70e26-afe0-439d-98e0-e7dff047db4b.svg";
+const imgLocationAvitoDs = "https://www.figma.com/api/mcp/asset/9270b192-138b-45d9-a4db-ffc2641af512.svg";
+const imgFilterAvitoDs = "https://www.figma.com/api/mcp/asset/a2eade28-de30-471f-9074-097503ad157f.svg";
+const imgIcon3 = "https://www.figma.com/api/mcp/asset/b1c2c35e-e901-4484-8b2d-ca933ffb5e15.svg";
+const imgIcon4 = "https://www.figma.com/api/mcp/asset/f0fc9812-7c65-408e-a2e3-ee962fe972c4.svg";
+const imgSortAvitoDs = "https://www.figma.com/api/mcp/asset/e1ff9638-4e29-4401-bd86-591bd3638c00.svg";
+const imgFavoritesOutlineAvitoDs = "https://www.figma.com/api/mcp/asset/39bc7b47-da60-46e9-b550-c3e251488891.svg";
+const imgVerified1 = "https://www.figma.com/api/mcp/asset/aea32130-bbfd-4700-907a-55ca821ec9aa.svg";
+const imgAvatar = "https://www.figma.com/api/mcp/asset/616dce6c-c437-4aa5-b8f9-87b9b1230a0a.svg";
+const imgXSwitcher = "https://www.figma.com/api/mcp/asset/a902a62c-bdb6-4210-98da-e8a738599e5f.svg";
+const imgIcon5 = "https://www.figma.com/api/mcp/asset/11a12a7d-49a9-4f18-abeb-38d895a74c5e.svg";
+
+type DropdownFieldsetProps = {
+  className?: string;
+  dropdownOpen?: "False";
+  size?: "M [Default]";
+};
+
+function DropdownFieldset({ className, dropdownOpen = "False", size = "M [Default]" }: DropdownFieldsetProps) {
+  return <div className={className || "h-0 relative w-[343px]"} data-node-id="190:233" />;
+}
+
+type XSwitcherProps = {
+  className?: string;
+  active?: boolean;
+  preset?: "Default";
+  size?: "M [Default]";
+  state?: "Default";
+};
+
+function XSwitcher({ className, active = true, preset = "Default", size = "M [Default]", state = "Default" }: XSwitcherProps) {
+  const isDefaultAndMDefaultAndDefaultAndNotActive = preset === "Default" && size === "M [Default]" && state === "Default" && !active;
+  return (
+    <div className={className || "h-[21px] relative w-[40px]"} id={isDefaultAndMDefaultAndDefaultAndNotActive ? "node-190_189" : "node-190_186"}>
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={isDefaultAndMDefaultAndDefaultAndNotActive ? imgPresetDefaultSizeMDefaultStateDefaultActiveFalse : imgPresetDefaultSizeMDefaultStateDefaultActiveTrue} />
+    </div>
+  );
+}
+
+type SpacerProps = {
+  className?: string;
+  additonBottom?: boolean;
+  additonTop?: boolean;
+  height?: "2" | "4" | "6";
+  hidden?: boolean;
+  sectionCompensationBottom?: boolean;
+  sectionCompensationTop?: boolean;
+};
+
+function Spacer({ className, additonBottom = false, additonTop = false, height = "2", hidden = true, sectionCompensationBottom = false, sectionCompensationTop = false }: SpacerProps) {
+  const is2AndTrue = height === "2" && hidden;
+  const is4AndTrue = height === "4" && hidden;
+  return (
+    <div className={className || "content-stretch flex flex-col items-start justify-center relative w-[40px]"} id={is2AndTrue ? "node-190_167" : is4AndTrue ? "node-190_155" : "node-190_149"}>
+      {additonTop && (
+        <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="190:150" data-name="Addition-top">
+          <div className="bg-[rgba(119,59,209,0)] flex-[1_0_0] h-[10px] min-w-px relative" data-node-id="I190:150;3365:12847" data-name="Filler" />
+        </div>
+      )}
+      {sectionCompensationTop && (
+        <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="190:151" data-name="Section-compensation-top">
+          <div className="flex-[1_0_0] h-[6px] min-w-px relative" data-node-id="I190:151;3354:14679" data-name="Filler" />
+        </div>
+      )}
+      <div className={`relative shrink-0 w-full ${is2AndTrue ? "h-[2px]" : is4AndTrue ? "h-[4px]" : "h-[6px]"}`} id={is2AndTrue ? "node-190_170" : is4AndTrue ? "node-190_158" : "node-190_152"} data-name="Spacer" />
+      {sectionCompensationBottom && (
+        <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="190:153" data-name="Section-compensation-bottom">
+          <div className="flex-[1_0_0] h-[6px] min-w-px relative" data-node-id="I190:153;3354:14679" data-name="Filler" />
+        </div>
+      )}
+      {additonBottom && (
+        <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="190:154" data-name="Addition-bottom">
+          <div className="bg-[rgba(119,59,209,0)] flex-[1_0_0] h-[10px] min-w-px relative" data-node-id="I190:154;3365:12847" data-name="Filler" />
+        </div>
+      )}
+    </div>
+  );
+}
+
+type ElementsHandleProps = {
+  className?: string;
+  preset?: "Default";
+};
+
+function ElementsHandle({ className, preset = "Default" }: ElementsHandleProps) {
+  return (
+    <div className={className || "h-[4px] relative w-[40px]"} data-node-id="190:146">
+      <div className="absolute bg-[var(--divider\/default,#ebeae8)] inset-0 rounded-[3px]" data-node-id="190:147" data-name="Handle" />
+    </div>
+  );
+}
+
+type ElementsHandleContainerProps = {
+  className?: string;
+  handle?: boolean;
+  preset?: "Default";
+};
+
+function ElementsHandleContainer({ className, handle = true, preset = "Default" }: ElementsHandleContainerProps) {
+  return (
+    <div className={className || "bg-[var(--bg\\/elevation1,white)] content-stretch flex flex-col items-center py-[8px] relative w-[375px]"} data-node-id="190:143">
+      {handle && <ElementsHandle className="h-[4px] relative shrink-0 w-[39px]" />}
+    </div>
+  );
+}
+
+type Spacer1Props = {
+  className?: string;
+  bottomCompensation?: boolean;
+  height?: "6";
+  hidden?: "True";
+  topCompensation?: boolean;
+};
+
+function Spacer1({ className, bottomCompensation = false, height = "6", hidden = "True", topCompensation = false }: Spacer1Props) {
+  return (
+    <div className={className || "content-stretch flex flex-col items-start justify-center relative w-[40px]"} data-node-id="190:3582">
+      {topCompensation && (
+        <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="190:3583" data-name="Top_compensation">
+          <div className="flex-[1_0_0] h-[6px] min-w-px relative" data-node-id="I190:3583;3354:14679" data-name="Filler" />
+        </div>
+      )}
+      <div className="h-[6px] relative shrink-0 w-full" data-node-id="190:3584" data-name="Filler" />
+      {bottomCompensation && (
+        <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="190:3585" data-name="Bottom_compensation">
+          <div className="flex-[1_0_0] h-[6px] min-w-px relative" data-node-id="I190:3585;3354:14679" data-name="Filler" />
+        </div>
+      )}
+    </div>
+  );
+}
+
+type ElementsProps = {
+  className?: string;
+  active?: "False";
+};
+
+function Elements({ className, active = "False" }: ElementsProps) {
+  return (
+    <div className={className || "content-stretch flex items-start relative"} data-node-id="190:3412">
+      <div className="relative shrink-0 size-[24px]" data-node-id="190:3413" data-name="Ads">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgAds} />
+      </div>
+    </div>
+  );
+}
+
+type MainProps = {
+  className?: string;
+  colored?: boolean;
+};
+
+function Main({ className, colored = false }: MainProps) {
+  const isColored = colored;
+  return (
+    <div className={className || "relative size-[24px]"} id={isColored ? "node-190_3371" : "node-190_3366"}>
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={isColored ? imgColoredTrue : imgColoredFalse} />
+    </div>
+  );
+}
+
+type ElementsTabProps = {
+  className?: string;
+  active?: boolean;
+  type?: "Поиск" | "Избранное" | "Сообщения";
+};
+
+function ElementsTab({ className, active = true, type = "Поиск" }: ElementsTabProps) {
+  const isAndActive = type === "Поиск" && active;
+  const isAndNotActive = type === "Избранное" && !active;
+  const isAndNotActive1 = type === "Сообщения" && !active;
+  return (
+    <div className={className || `content-stretch flex flex-col gap-[4px] items-center relative ${!active && ["Избранное", "Сообщения"].includes(type) ? "" : "justify-center"}`} id={isAndNotActive1 ? "node-190_3508" : isAndNotActive ? "node-190_3502" : "node-190_3496"}>
+      {isAndActive && (
+        <>
+          <Main className="relative shrink-0 size-[24px]" colored />
+          <p className="[word-break:break-word] font-['Manrope_Cut_008:Medium'] leading-[14px] not-italic relative shrink-0 text-[11px] text-[color:var(--colors\/blue\/blue600,#0099f7)] text-center whitespace-nowrap" data-node-id="190:3498">
+            Поиск
+          </p>
+        </>
+      )}
+      {isAndNotActive && (
+        <>
+          <div className="relative shrink-0 size-[24px]" data-node-id="190:3503" data-name="Favorites">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFavorites} />
+          </div>
+          <p className="[word-break:break-word] font-['Manrope_Cut_008:Medium'] leading-[14px] not-italic relative shrink-0 text-[11px] text-[color:var(--colors\/gray\/gray48,#858585)] text-center whitespace-nowrap" data-node-id="190:3504">
+            Избранное
+          </p>
+        </>
+      )}
+      {isAndNotActive1 && (
+        <>
+          <div className="relative shrink-0 size-[24px]" data-node-id="190:3509" data-name="Chat">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgChat} />
+          </div>
+          <p className="[word-break:break-word] font-['Manrope_Cut_008:Medium'] leading-[14px] not-italic relative shrink-0 text-[11px] text-[color:var(--colors\/gray\/gray48,#858585)] text-center whitespace-nowrap" data-node-id="190:3510">
+            Сообщения
+          </p>
+        </>
+      )}
+    </div>
+  );
+}
+
+type ElementsSnippetIconsV2Props = {
+  className?: string;
+  propValue?: "В избранное" | "Позвонить";
+};
+
+function ElementsSnippetIconsV2({ className, propValue = "Позвонить" }: ElementsSnippetIconsV2Props) {
+  const is = propValue === "В избранное";
+  return (
+    <div className={className || "relative size-[24px]"} id={is ? "node-190_526" : "node-190_522"}>
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={is ? img1 : img} />
+    </div>
+  );
+}
+
+function Card({ className }: { className?: string }) {
+  return (
+    <div className={className || "bg-white content-stretch flex flex-col gap-[8px] items-start overflow-clip px-[16px] relative w-[375px]"} data-node-id="190:4772" data-name="Card">
+      <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-node-id="190:4773" data-name="snpt / price">
+        <p className="[word-break:break-word] font-['CoFo_Avito_Text:Bold'] leading-[22px] not-italic relative shrink-0 text-[18px] text-black whitespace-nowrap" data-node-id="190:4774">
+          Менеджер по продажам
+        </p>
+        <div className="content-stretch flex gap-[12px] items-center justify-end pt-[2px] relative shrink-0" data-node-id="190:4775" data-name="Icons">
+          <ElementsSnippetIconsV2 className="relative shrink-0 size-[24px]" propValue="В избранное" />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col h-[22px] items-start relative shrink-0 w-[343px]" data-node-id="190:4779" data-name="Text holder">
+        <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[22px] not-italic relative shrink-0 text-[18px] text-black w-full" data-node-id="190:4780">
+          От 56 0000 ₽ в месяц
+        </p>
+      </div>
+      <div className="content-stretch flex gap-[6px] items-start relative shrink-0" data-node-id="190:4781">
+        <div className="bg-[#d2fcc4] content-stretch flex items-center justify-center pb-[6px] pt-[4px] px-[8px] relative rounded-[100px] shrink-0" data-node-id="190:4782">
+          <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[14px] not-italic relative shrink-0 text-[#416136] text-[12px] whitespace-nowrap" data-node-id="190:4783">
+            Без опыта
+          </p>
+        </div>
+        <div className="bg-[#c7eeff] content-stretch flex items-center justify-center pb-[6px] pt-[4px] px-[8px] relative rounded-[100px] shrink-0" data-node-id="190:4784">
+          <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[14px] not-italic relative shrink-0 text-[#0058a3] text-[12px] whitespace-nowrap" data-node-id="190:4785">
+            Быстрые выплаты
+          </p>
+        </div>
+      </div>
+      <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="190:4786" data-name="snpt / link">
+        <p className="[word-break:break-word] flex-[1_0_0] font-['CoFo_Avito_Text:Regular'] leading-[20px] min-w-px not-italic relative self-stretch text-[15px] text-black" data-node-id="190:4787">
+          График 2/2
+        </p>
+      </div>
+      <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-node-id="190:4788" data-name="snpt / sellerBig">
+        <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-node-id="190:4789" data-name="Text holder">
+          <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="190:4790" data-name="Mark 2">
+            <div className="relative shrink-0 size-[14px]" data-node-id="190:4791" data-name="Verified">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVerified} />
+            </div>
+            <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[16px] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap" data-node-id="190:4792">
+              Магазин «Соседи»
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="190:4793">
+            <div className="content-stretch flex gap-px items-start relative shrink-0" data-node-id="190:4794" data-name="Rate">
+              <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0" data-node-id="I190:4794;249840:74254" data-name="Grade Filled">
+                <div className="h-[16px] relative shrink-0 w-[12px]" data-node-id="I190:4794;249840:74254;30:686" data-name="Icon">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+                </div>
+              </div>
+            </div>
+            <div className="[word-break:break-word] content-stretch flex font-['CoFo_Avito_Text:Regular'] gap-[4px] items-center not-italic relative shrink-0 whitespace-nowrap" data-node-id="190:4795">
+              <p className="leading-[16px] relative shrink-0 text-[14px] text-black" data-node-id="190:4796">
+                4.5
+              </p>
+              <p className="leading-[16px] relative shrink-0 text-[14px] text-black" data-node-id="190:4797">
+                ·
+              </p>
+              <p className="leading-[13px] relative shrink-0 text-[12px] text-[rgba(0,0,0,0.5)]" data-node-id="190:4798">
+                67 Отзывов
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="190:4799" data-name="Rating">
+            <div className="h-[16px] relative shrink-0 w-[14px]" data-node-id="190:4800" data-name="Elements/Metro_line">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgElementsMetroLine} />
+            </div>
+            <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[16px] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap" data-node-id="190:4802">
+              Динамо, 7 мин.
+            </p>
+            <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0" data-node-id="190:4803" data-name="Icon">
+              <div className="h-[20px] relative shrink-0 w-[10px]" data-node-id="I190:4803;125:687" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col items-end relative shrink-0 w-[40px]" data-node-id="190:4804">
+          <div className="relative shrink-0 size-[40px]" data-node-id="190:4805">
+            <div className="absolute bg-[#f5f5f5] left-0 rounded-[12px] size-[40px] top-0" data-node-id="190:4806" />
+            <div className="absolute inset-[20%]" data-node-id="190:4807" data-name="image 8" />
+          </div>
+        </div>
+      </div>
+      <div className="content-stretch flex gap-[6px] items-start relative shrink-0" data-node-id="190:4808">
+        <div className="bg-[#f2f1f0] content-stretch flex gap-[2px] h-[44px] items-center justify-center pb-[13px] pl-[16px] pr-[17px] pt-[11px] relative rounded-[12px] shrink-0 w-[169.5px]" data-node-id="190:4809" data-name="Button">
+          <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[17px] not-italic relative shrink-0 text-[15px] text-black whitespace-nowrap" data-node-id="I190:4809;60:11560">
+            Откликнуться
+          </p>
+        </div>
+        <div className="bg-[#f2f1f0] content-stretch flex gap-[2px] h-[44px] items-center justify-center pb-[13px] pl-[16px] pr-[17px] pt-[11px] relative rounded-[12px] shrink-0 w-[169.5px]" data-node-id="190:4810" data-name="Button">
+          <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[17px] not-italic relative shrink-0 text-[15px] text-black whitespace-nowrap" data-node-id="I190:4810;60:11560">
+            Позвонить
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+type ArrowLeftProps = {
+  className?: string;
+  product?: "Common";
+  size?: "20";
+};
+
+function ArrowLeft({ className, product = "Common", size = "20" }: ArrowLeftProps) {
+  return (
+    <div className={className || "relative size-[20px]"} data-node-id="190:137">
+      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSize20ProductCommon} />
+    </div>
+  );
+}
+
+export default function Component() {
+  return (
+    <div className="bg-white border border-[#d9d9d9] border-solid overflow-clip relative rounded-[50px] size-full" data-node-id="190:5461" data-name="Создание подборок">
+      <div className="absolute content-stretch flex h-[60px] items-center justify-center left-[-1px] top-[-1px] w-[375px]" data-node-id="190:5462" data-name="StatusBar">
+        <div className="content-stretch flex flex-[1_0_0] gap-[4px] h-[60px] items-center justify-center min-w-px overflow-clip px-[42px] py-[12px] relative" data-node-id="I190:5462;213:15553" data-name="Left">
+          <div className="h-[14px] relative shrink-0 w-[35px]" data-node-id="I190:5462;213:15554" data-name="Time">
+            <div className="absolute h-[14px] left-0 top-0 w-[35px]" data-node-id="I190:5462;213:15555" data-name="9:41">
+              <div className="[word-break:break-word] absolute flex flex-col font-['SF_Pro:Semibold'] font-[590] inset-0 justify-center leading-[0] overflow-hidden text-[17px] text-black text-center text-ellipsis tracking-[-0.5px] whitespace-nowrap" data-node-id="I190:5462;213:15556" style={{ fontVariationSettings: '"wdth" 100' }}>
+                <p className="leading-[14px]">9:41</p>
+              </div>
+            </div>
+          </div>
+          <div className="relative shrink-0 size-[14px]" data-node-id="I190:5462;213:15557" data-name="Location">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLocation} />
+          </div>
+        </div>
+        <div className="bg-black h-[36px] overflow-clip relative rounded-[32px] shrink-0 w-[122px]" data-node-id="I190:5462;213:15559" data-name="Dynamic Island">
+          <div className="absolute left-[98px] size-[12px] top-[12px]" data-node-id="I190:5462;213:15560" data-name="Lens">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLens} />
+          </div>
+        </div>
+        <div className="content-stretch flex flex-[1_0_0] gap-[10px] h-[60px] items-center justify-center min-w-px overflow-clip px-[28px] py-[12px] relative" data-node-id="I190:5462;213:15565" data-name="Right">
+          <div className="h-[14px] relative shrink-0 w-[18px]" data-node-id="I190:5462;213:15566" data-name="Network">
+            <div className="absolute inset-[0_-2.78%_0_0]">
+              <img alt="" className="block max-w-none size-full" src={imgNetwork} />
+            </div>
+          </div>
+          <div className="h-[14px] relative shrink-0 w-[18px]" data-node-id="I190:5462;213:15571" data-name="Data">
+            <div className="absolute inset-[0_-3.5%]">
+              <img alt="" className="block max-w-none size-full" src={imgData} />
+            </div>
+          </div>
+          <div className="h-[14px] relative shrink-0 w-[27px]" data-node-id="I190:5462;213:15573" data-name="Battery">
+            <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgBattery} />
+          </div>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[var(--avito-layout-space-16,16px)] items-start left-[-1px] pl-[var(--avito-layout-space-16,16px)] top-[59px] w-[391px]" data-node-id="190:5463">
+        <div className="content-stretch flex gap-[var(--avito-layout-space-12,12px)] items-center relative shrink-0 w-[343px]" data-node-id="190:5464">
+          <div className="content-stretch flex gap-[var(--avito-layout-space-10,10px)] items-center justify-center p-[var(--avito-layout-space-8,8px)] relative shrink-0 size-[40px]" data-node-id="190:5465" data-name="Elements/ContentStart">
+            <ArrowLeft className="relative shrink-0 size-[20px]" />
+          </div>
+          <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch flex flex-[1_0_0] gap-[4px] items-start min-w-px overflow-clip pb-[var(--controls\/bottom,13px)] pl-[var(--controls\/start,16px)] pr-[var(--controls\/end,12px)] pt-[var(--controls\/top,11px)] relative rounded-[var(--rad\=12,12px)]" data-node-id="190:5467" data-name="Input">
+            <div className="content-stretch flex flex-col items-center justify-center overflow-clip relative shrink-0 w-[20px]" data-node-id="I190:5467;40460:28298" data-name="Icon left">
+              <div className="h-[20px] relative shrink-0 w-[14px]" data-node-id="I190:5467;40460:28298;30:545" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon2} />
+              </div>
+            </div>
+            <div className="content-stretch flex flex-[1_0_0] gap-[6px] items-center min-w-px relative" data-node-id="I190:5467;160534:13332" data-name="Content">
+              <div className="content-stretch flex items-center relative shrink-0" data-node-id="I190:5467;40460:28300" data-name="Text holder">
+                <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/m20,20px)] overflow-hidden relative shrink-0 text-[15px] text-black text-ellipsis whitespace-nowrap" data-node-id="I190:5467;40460:28302">
+                  Менеджер по продажам
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="content-stretch flex items-center justify-between relative shrink-0 w-[343px]" data-node-id="190:5468">
+          <div className="content-stretch flex gap-[var(--avito-layout-space-6,6px)] items-center relative shrink-0" data-node-id="190:5469">
+            <div className="overflow-clip relative shrink-0 size-[14px]" data-node-id="190:5470" data-name="Icon slot / Location">
+              <div className="absolute left-0 size-[14px] top-0" data-node-id="190:5471" data-name="Location — Avito DS">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLocationAvitoDs} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[15px] not-italic relative shrink-0 text-[12px] text-black text-center whitespace-nowrap" data-node-id="190:5472">
+              Москва, ул Пушкина 33
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[var(--avito-layout-space-6,6px)] items-center relative shrink-0" data-node-id="190:5473">
+            <div className="relative shrink-0 size-[14px]" data-node-id="190:5474" data-name="Icon slot / Filter">
+              <div className="absolute left-0 size-[14px] top-0" data-node-id="190:5475" data-name="Filter — Avito DS">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFilterAvitoDs} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[15px] not-italic relative shrink-0 text-[12px] text-black text-center whitespace-nowrap" data-node-id="190:5476">
+              Фильтры
+            </p>
+          </div>
+        </div>
+        <div className="content-stretch flex gap-[var(--avito-layout-space-6,6px)] items-center relative shrink-0" data-node-id="190:5477">
+          <div className="bg-[var(--components\/control\/bg\/selected,#141414)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[30px] items-center justify-center min-h-[30px] min-w-[30px] pb-[var(--button\/xs\/padding\/bottom,8px)] pl-[var(--button\/xs\/padding\/start,8px)] pr-[var(--button\/xs\/padding\/end,8px)] pt-[var(--button\/xs\/padding\/top,6px)] relative rounded-[var(--button\/xs\/radius\/square,10px)] shrink-0" data-node-id="190:5478" data-name="Chips">
+            <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5478;135003:27127" data-name="Pad-between" />
+            <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/inverse\/primary,white)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5478;135003:27128">
+              Продажи
+            </p>
+            <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5478;135003:27129" data-name="Pad-between" />
+            <div className="content-stretch flex flex-col h-full items-end justify-center overflow-clip relative shrink-0" data-node-id="I190:5478;135003:27130" data-name="Icon end">
+              <div className="h-[16px] relative shrink-0 w-[8px]" data-node-id="I190:5478;135003:27130;58:848" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon3} />
+              </div>
+            </div>
+            <div className="h-full relative shrink-0 w-px" data-node-id="I190:5478;135003:27131" data-name="Pad-between-last" />
+          </div>
+          <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[30px] items-center justify-center min-h-[30px] min-w-[30px] pb-[var(--button\/xs\/padding\/bottom,8px)] pl-[var(--button\/xs\/padding\/start,8px)] pr-[var(--button\/xs\/padding\/end,8px)] pt-[var(--button\/xs\/padding\/top,6px)] relative rounded-[var(--button\/xs\/radius\/square,10px)] shrink-0" data-node-id="190:5479" data-name="Chips">
+            <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5479;134937:22594" data-name="Pad-between" />
+            <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5479;134937:22595">
+              Поиск по приорететам
+            </p>
+            <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5479;134937:22596" data-name="Pad-between" />
+            <div className="content-stretch flex flex-col h-full items-end justify-center overflow-clip relative shrink-0" data-node-id="I190:5479;134937:22597" data-name="Icon end">
+              <div className="h-[16px] relative shrink-0 w-[8px]" data-node-id="I190:5479;134937:22597;58:848" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon4} />
+              </div>
+            </div>
+            <div className="h-full relative shrink-0 w-px" data-node-id="I190:5479;134937:22598" data-name="Pad-between-last" />
+          </div>
+          <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[30px] items-center justify-center min-h-[30px] min-w-[30px] pb-[var(--button\/xs\/padding\/bottom,8px)] pl-[var(--button\/xs\/padding\/start,8px)] pr-[var(--button\/xs\/padding\/end,8px)] pt-[var(--button\/xs\/padding\/top,6px)] relative rounded-[var(--button\/xs\/radius\/square,10px)] shrink-0" data-node-id="190:5480" data-name="Chips">
+            <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5480;134937:22594" data-name="Pad-between" />
+            <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5480;134937:22595">
+              Частота выплат
+            </p>
+            <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5480;134937:22596" data-name="Pad-between" />
+            <div className="content-stretch flex flex-col h-full items-end justify-center overflow-clip relative shrink-0" data-node-id="I190:5480;134937:22597" data-name="Icon end">
+              <div className="h-[16px] relative shrink-0 w-[8px]" data-node-id="I190:5480;134937:22597;58:848" data-name="Icon">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon4} />
+              </div>
+            </div>
+            <div className="h-full relative shrink-0 w-px" data-node-id="I190:5480;134937:22598" data-name="Pad-between-last" />
+          </div>
+        </div>
+        <div className="content-stretch flex items-center justify-between relative shrink-0 w-[343px]" data-node-id="190:5481">
+          <div className="content-stretch flex gap-[var(--avito-layout-space-6,6px)] items-center relative shrink-0" data-node-id="190:5482">
+            <div className="overflow-clip relative shrink-0 size-[14px]" data-node-id="190:5483" data-name="Icon slot / Sort">
+              <div className="absolute left-0 size-[14px] top-0" data-node-id="190:5484" data-name="Sort — Avito DS">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgSortAvitoDs} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[15px] not-italic relative shrink-0 text-[12px] text-black text-center whitespace-nowrap" data-node-id="190:5485">
+              Сортировка
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[var(--avito-layout-space-6,6px)] items-center relative shrink-0" data-node-id="190:5486">
+            <div className="overflow-clip relative shrink-0 size-[14px]" data-node-id="190:5487" data-name="Icon slot / Collection">
+              <div className="absolute left-0 size-[14px] top-0" data-node-id="190:5488" data-name="Favorites outline — Avito DS">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFavoritesOutlineAvitoDs} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[15px] not-italic relative shrink-0 text-[12px] text-black text-center whitespace-nowrap" data-node-id="190:5489">
+              Создать подборку
+            </p>
+          </div>
+        </div>
+      </div>
+      <div className="absolute content-stretch flex flex-col gap-[var(--avito-layout-space-16,16px)] items-start left-[-1px] top-[239px] w-[375px]" data-node-id="190:5490">
+        <Card className="bg-white content-stretch flex flex-col gap-[8px] items-start overflow-clip px-[16px] relative shrink-0 w-full" />
+        <div className="bg-white content-stretch flex flex-col gap-[8px] items-start overflow-clip px-[16px] relative shrink-0 w-full" data-node-id="190:5492" data-name="Card">
+          <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-node-id="I190:5492;68:14761" data-name="snpt / price">
+            <p className="[word-break:break-word] font-['CoFo_Avito_Text:Bold'] leading-[22px] not-italic relative shrink-0 text-[18px] text-black whitespace-nowrap" data-node-id="I190:5492;68:14762">
+              Менеджер по продажам
+            </p>
+            <div className="content-stretch flex gap-[12px] items-center justify-end pt-[2px] relative shrink-0" data-node-id="I190:5492;68:14763" data-name="Icons">
+              <ElementsSnippetIconsV2 className="relative shrink-0 size-[24px]" propValue="В избранное" />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col h-[22px] items-start relative shrink-0 w-[343px]" data-node-id="I190:5492;68:14768" data-name="Text holder">
+            <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[22px] not-italic relative shrink-0 text-[18px] text-black w-full" data-node-id="I190:5492;68:14769">
+              От 80 000 ₽ в месяц
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[6px] items-start relative shrink-0" data-node-id="I190:5492;70:14829">
+            <div className="bg-[#d2fcc4] content-stretch flex items-center justify-center pb-[6px] pt-[4px] px-[8px] relative rounded-[100px] shrink-0" data-node-id="I190:5492;70:14823">
+              <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[14px] not-italic relative shrink-0 text-[#416136] text-[12px] whitespace-nowrap" data-node-id="I190:5492;70:14824">
+                Опыт от 1 года
+              </p>
+            </div>
+            <div className="bg-[#c7eeff] content-stretch flex items-center justify-center pb-[6px] pt-[4px] px-[8px] relative rounded-[100px] shrink-0" data-node-id="I190:5492;70:14826">
+              <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[14px] not-italic relative shrink-0 text-[#0058a3] text-[12px] whitespace-nowrap" data-node-id="I190:5492;70:14827">
+                Можно без резюме
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="I190:5492;68:14770" data-name="snpt / link">
+            <p className="[word-break:break-word] flex-[1_0_0] font-['CoFo_Avito_Text:Regular'] leading-[20px] min-w-px not-italic relative self-stretch text-[15px] text-black" data-node-id="I190:5492;68:14771">
+              Гибкий график
+            </p>
+          </div>
+          <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-node-id="I190:5492;68:14772" data-name="snpt / sellerBig">
+            <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-node-id="I190:5492;68:14773" data-name="Text holder">
+              <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I190:5492;68:14774" data-name="Mark 2">
+                <div className="relative shrink-0 size-[14px]" data-node-id="I190:5492;68:14775" data-name="Verified">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVerified1} />
+                </div>
+                <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[16px] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap" data-node-id="I190:5492;68:14776">
+                  IT-компания «ТехноСфера»
+                </p>
+              </div>
+              <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="I190:5492;70:15073">
+                <div className="content-stretch flex gap-px items-start relative shrink-0" data-node-id="I190:5492;70:15074" data-name="Rate">
+                  <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0" data-node-id="I190:5492;70:15074;249840:74254" data-name="Grade Filled">
+                    <div className="h-[16px] relative shrink-0 w-[12px]" data-node-id="I190:5492;70:15074;249840:74254;30:686" data-name="Icon">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+                    </div>
+                  </div>
+                </div>
+                <div className="[word-break:break-word] content-stretch flex font-['CoFo_Avito_Text:Regular'] gap-[4px] items-center not-italic relative shrink-0 whitespace-nowrap" data-node-id="I190:5492;70:15086">
+                  <p className="leading-[16px] relative shrink-0 text-[14px] text-black" data-node-id="I190:5492;70:15075">
+                    4.8
+                  </p>
+                  <p className="leading-[16px] relative shrink-0 text-[14px] text-black" data-node-id="I190:5492;70:15076">
+                    ·
+                  </p>
+                  <p className="leading-[13px] relative shrink-0 text-[12px] text-[rgba(0,0,0,0.5)]" data-node-id="I190:5492;70:15077">
+                    134 Отзыва
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I190:5492;68:14780" data-name="Rating">
+                <div className="h-[16px] relative shrink-0 w-[14px]" data-node-id="I190:5492;68:14781" data-name="Elements/Metro_line">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgElementsMetroLine} />
+                </div>
+                <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[16px] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap" data-node-id="I190:5492;68:14783">
+                  Площадь, 10 мин.
+                </p>
+                <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0" data-node-id="I190:5492;68:14784" data-name="Icon">
+                  <div className="h-[20px] relative shrink-0 w-[10px]" data-node-id="I190:5492;68:14784;125:687" data-name="Icon">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-end relative shrink-0 w-[40px]" data-node-id="I190:5492;68:14785">
+              <div className="relative shrink-0 size-[40px]" data-node-id="I190:5492;68:14786">
+                <div className="absolute bg-[#f5f5f5] left-0 rounded-[12px] size-[40px] top-0" data-node-id="I190:5492;68:14787" />
+                <div className="absolute inset-[20%]" data-node-id="I190:5492;68:14788" data-name="image 8" />
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[6px] items-start relative shrink-0" data-node-id="I190:5492;68:14789">
+            <div className="bg-[#f2f1f0] content-stretch flex gap-[2px] h-[44px] items-center justify-center pb-[13px] pl-[16px] pr-[17px] pt-[11px] relative rounded-[12px] shrink-0 w-[169.5px]" data-node-id="I190:5492;68:14790" data-name="Button">
+              <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[17px] not-italic relative shrink-0 text-[15px] text-black whitespace-nowrap" data-node-id="I190:5492;68:14790;60:11560">
+                Откликнуться
+              </p>
+            </div>
+            <div className="bg-[#f2f1f0] content-stretch flex gap-[2px] h-[44px] items-center justify-center pb-[13px] pl-[16px] pr-[17px] pt-[11px] relative rounded-[12px] shrink-0 w-[169.5px]" data-node-id="I190:5492;68:14791" data-name="Button">
+              <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[17px] not-italic relative shrink-0 text-[15px] text-black whitespace-nowrap" data-node-id="I190:5492;68:14791;60:11560">
+                Позвонить
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="bg-white content-stretch flex flex-col gap-[8px] items-start overflow-clip px-[16px] relative shrink-0 w-full" data-node-id="190:5493" data-name="Card">
+          <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-node-id="I190:5493;68:14761" data-name="snpt / price">
+            <p className="[word-break:break-word] font-['CoFo_Avito_Text:Bold'] leading-[22px] not-italic relative shrink-0 text-[18px] text-black whitespace-nowrap" data-node-id="I190:5493;68:14762">
+              Дизайнер интерьеров
+            </p>
+            <div className="content-stretch flex gap-[12px] items-center justify-end pt-[2px] relative shrink-0" data-node-id="I190:5493;68:14763" data-name="Icons">
+              <ElementsSnippetIconsV2 className="relative shrink-0 size-[24px]" propValue="В избранное" />
+            </div>
+          </div>
+          <div className="content-stretch flex flex-col h-[22px] items-start relative shrink-0 w-[343px]" data-node-id="I190:5493;68:14768" data-name="Text holder">
+            <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[22px] not-italic relative shrink-0 text-[18px] text-black w-full" data-node-id="I190:5493;68:14769">
+              От 70 000 ₽ в месяц
+            </p>
+          </div>
+          <div className="content-stretch flex gap-[6px] items-start relative shrink-0" data-node-id="I190:5493;70:14829">
+            <div className="bg-[#d2fcc4] content-stretch flex items-center justify-center pb-[6px] pt-[4px] px-[8px] relative rounded-[100px] shrink-0" data-node-id="I190:5493;70:14823">
+              <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[14px] not-italic relative shrink-0 text-[#416136] text-[12px] whitespace-nowrap" data-node-id="I190:5493;70:14824">
+                Опыт от 2 лет
+              </p>
+            </div>
+            <div className="bg-[#c7eeff] content-stretch flex items-center justify-center pb-[6px] pt-[4px] px-[8px] relative rounded-[100px] shrink-0" data-node-id="I190:5493;70:14826">
+              <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[14px] not-italic relative shrink-0 text-[#0058a3] text-[12px] whitespace-nowrap" data-node-id="I190:5493;70:14827">
+                Бонусы и премии
+              </p>
+            </div>
+          </div>
+          <div className="content-stretch flex items-start relative shrink-0 w-full" data-node-id="I190:5493;68:14770" data-name="snpt / link">
+            <p className="[word-break:break-word] flex-[1_0_0] font-['CoFo_Avito_Text:Regular'] leading-[20px] min-w-px not-italic relative self-stretch text-[15px] text-black" data-node-id="I190:5493;68:14771">
+              5/2
+            </p>
+          </div>
+          <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-node-id="I190:5493;68:14772" data-name="snpt / sellerBig">
+            <div className="content-stretch flex flex-col gap-[4px] items-start relative shrink-0" data-node-id="I190:5493;68:14773" data-name="Text holder">
+              <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I190:5493;68:14774" data-name="Mark 2">
+                <div className="relative shrink-0 size-[14px]" data-node-id="I190:5493;68:14775" data-name="Verified">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgVerified1} />
+                </div>
+                <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[16px] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap" data-node-id="I190:5493;68:14776">
+                  Студия «КомфортДом»
+                </p>
+              </div>
+              <div className="content-stretch flex gap-[6px] items-center relative shrink-0" data-node-id="I190:5493;70:15073">
+                <div className="content-stretch flex gap-px items-start relative shrink-0" data-node-id="I190:5493;70:15074" data-name="Rate">
+                  <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0" data-node-id="I190:5493;70:15074;249840:74254" data-name="Grade Filled">
+                    <div className="h-[16px] relative shrink-0 w-[12px]" data-node-id="I190:5493;70:15074;249840:74254;30:686" data-name="Icon">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+                    </div>
+                  </div>
+                </div>
+                <div className="[word-break:break-word] content-stretch flex font-['CoFo_Avito_Text:Regular'] gap-[4px] items-center not-italic relative shrink-0 whitespace-nowrap" data-node-id="I190:5493;70:15086">
+                  <p className="leading-[16px] relative shrink-0 text-[14px] text-black" data-node-id="I190:5493;70:15075">
+                    4.7
+                  </p>
+                  <p className="leading-[16px] relative shrink-0 text-[14px] text-black" data-node-id="I190:5493;70:15076">
+                    ·
+                  </p>
+                  <p className="leading-[13px] relative shrink-0 text-[12px] text-[rgba(0,0,0,0.5)]" data-node-id="I190:5493;70:15077">
+                    89 Отзывов
+                  </p>
+                </div>
+              </div>
+              <div className="content-stretch flex gap-[4px] items-center relative shrink-0" data-node-id="I190:5493;68:14780" data-name="Rating">
+                <div className="h-[16px] relative shrink-0 w-[14px]" data-node-id="I190:5493;68:14781" data-name="Elements/Metro_line">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgElementsMetroLine} />
+                </div>
+                <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[16px] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap" data-node-id="I190:5493;68:14783">
+                  Центр, 15 мин.
+                </p>
+                <div className="content-stretch flex flex-col items-start overflow-clip relative shrink-0" data-node-id="I190:5493;68:14784" data-name="Icon">
+                  <div className="h-[20px] relative shrink-0 w-[10px]" data-node-id="I190:5493;68:14784;125:687" data-name="Icon">
+                    <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="content-stretch flex flex-col items-end relative shrink-0 w-[40px]" data-node-id="I190:5493;68:14785">
+              <div className="relative shrink-0 size-[40px]" data-node-id="I190:5493;68:14786">
+                <div className="absolute bg-[#f5f5f5] left-0 rounded-[12px] size-[40px] top-0" data-node-id="I190:5493;68:14787" />
+                <div className="absolute inset-[20%]" data-node-id="I190:5493;68:14788" data-name="image 8" />
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[6px] items-start relative shrink-0" data-node-id="I190:5493;68:14789">
+            <div className="bg-[#f2f1f0] content-stretch flex gap-[2px] h-[44px] items-center justify-center pb-[13px] pl-[16px] pr-[17px] pt-[11px] relative rounded-[12px] shrink-0 w-[169.5px]" data-node-id="I190:5493;68:14790" data-name="Button">
+              <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[17px] not-italic relative shrink-0 text-[15px] text-black whitespace-nowrap" data-node-id="I190:5493;68:14790;60:11560">
+                Откликнуться
+              </p>
+            </div>
+            <div className="bg-[#f2f1f0] content-stretch flex gap-[2px] h-[44px] items-center justify-center pb-[13px] pl-[16px] pr-[17px] pt-[11px] relative rounded-[12px] shrink-0 w-[169.5px]" data-node-id="I190:5493;68:14791" data-name="Button">
+              <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[17px] not-italic relative shrink-0 text-[15px] text-black whitespace-nowrap" data-node-id="I190:5493;68:14791;60:11560">
+                Позвонить
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="absolute bg-[var(--default-constant-gray/inverse-black/overlay-constant-gray,white)] border-[var(--default-warmgray8/inverse-warmgray84/overlay-warmgray8,#ebeae8)] border-solid border-t-[0.5px] content-stretch flex flex-col items-start left-[-1px] top-[729px] w-[375px]" data-node-id="190:5494" data-name="TabBar">
+        <Spacer1 className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full" />
+        <div className="content-stretch flex items-start justify-between relative shrink-0 w-full" data-node-id="I190:5494;75860:16759" data-name="Tabs">
+          <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] h-[42px] items-center justify-center min-w-px relative" data-node-id="I190:5494;75792:18314" data-name="Elements/Tab">
+            <Main className="relative shrink-0 size-[24px]" colored />
+            <p className="[word-break:break-word] font-['Manrope_Cut_008:Medium'] leading-[14px] not-italic relative shrink-0 text-[11px] text-[color:var(--colors\/blue\/blue600,#0099f7)] text-center whitespace-nowrap" data-node-id="I190:5494;75792:18314;75792:863">
+              Поиск
+            </p>
+          </div>
+          <ElementsTab active={false} className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] h-[42px] items-center min-w-px relative" type="Избранное" />
+          <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] h-[42px] items-center justify-end min-w-px relative" data-node-id="I190:5494;75792:18311" data-name="Elements/Tab">
+            <div className="content-stretch flex items-end justify-center relative shrink-0" data-node-id="I190:5494;75792:18311;75792:18281" data-name="Elements/Синий круг по центру">
+              <div className="relative shrink-0 size-[24px]" data-node-id="I190:5494;75792:18311;75792:18281;75792:855" data-name="Ads">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgAds} />
+              </div>
+            </div>
+            <p className="[word-break:break-word] font-['Manrope_Cut_008:Medium'] leading-[14px] not-italic relative shrink-0 text-[11px] text-[color:var(--colors\/gray\/gray48,#858585)] text-center whitespace-nowrap" data-node-id="I190:5494;75792:18311;75792:854">
+              Объявления
+            </p>
+          </div>
+          <ElementsTab active={false} className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] h-[42px] items-center min-w-px relative" type="Сообщения" />
+          <div className="content-stretch flex flex-[1_0_0] flex-col gap-[4px] h-[42px] items-center min-w-px relative" data-node-id="I190:5494;75792:18313" data-name="Elements/Tab">
+            <div className="relative shrink-0 size-[24px]" data-node-id="I190:5494;75792:18313;75792:18304" data-name="Avatar">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgAvatar} />
+            </div>
+            <p className="[word-break:break-word] font-['Manrope_Cut_008:Medium'] leading-[14px] not-italic relative shrink-0 text-[11px] text-[color:var(--colors\/gray\/gray48,#858585)] text-center whitespace-nowrap" data-node-id="I190:5494;75792:18313;75792:851">
+              Профиль
+            </p>
+          </div>
+        </div>
+        <Spacer1 className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-full" />
+        <div className="h-[29px] relative shrink-0 w-[375px]" data-node-id="I190:5494;75860:16760" data-name="iOS_HomeIndicator">
+          <div className="-translate-x-1/2 absolute bg-[var(--colors\/gray\/black,black)] bottom-[8px] h-[5px] left-1/2 rounded-[3px] w-[134px]" data-node-id="I190:5494;75860:16760;23487:42631" data-name="pipka" />
+        </div>
+      </div>
+      <div className="absolute bg-[var(--backdrop\/fill,rgba(0,0,0,0.4))] content-stretch flex flex-col h-[812px] items-center justify-end left-[-1px] min-h-[360px] min-w-[320px] top-[-1px] w-[375px]" data-node-id="190:5495" data-name="BottomSheet+Backdrop [AutoLayout]">
+        <div className="bg-white content-stretch flex flex-col gap-[var(--avito-layout-space-24,24px)] items-start max-w-[600px] min-w-[320px] overflow-clip relative rounded-tl-[28px] rounded-tr-[28px] shrink-0 w-[375px]" data-node-id="190:5496" data-name="BottomSheet">
+          <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="190:5497">
+            <ElementsHandleContainer className="bg-[var(--bg\/elevation1,white)] content-stretch flex flex-col items-center py-[8px] relative shrink-0 w-full" />
+            <div className="h-[4px] relative shrink-0 w-px" data-node-id="190:5499" data-name="Spacing / 04" />
+            <div className="bg-[var(--bg\/elevation1,white)] content-stretch flex flex-col items-start pl-[var(--avito-layout-page-inset-horizontal,16px)] pr-[var(--avito-layout-space-48,48px)] relative shrink-0 w-full" data-node-id="190:5500" data-name="Content">
+              <Spacer className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-[40px]" height="6" />
+              <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Bold')] font-[var(--font\/weight\/bold,normal)] leading-[var(--font\/line-height\/h25,28px)] min-w-full relative shrink-0 text-[color:var(--text\/primary,black)] text-[length:var(--font\/size\/h25,24px)] w-[min-content]" data-node-id="190:5502">
+                Создать подборку
+              </p>
+              <Spacer className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-[40px]" height="4" />
+              <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/m10,22px)] min-w-full relative shrink-0 text-[color:var(--text\/primary,black)] text-[length:var(--font\/size\/m10,15px)] w-[min-content]" data-node-id="190:5504">
+                Мы сохраним настройки фильтров, и сообщим о новых вакансиях
+              </p>
+              <Spacer className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-[40px]" height="6" />
+            </div>
+            <div className="h-[20px] relative shrink-0 w-px" data-node-id="190:5506" data-name="Spacing / 20" />
+            <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="190:5507">
+              <div className="bg-[var(--bg\/elevation1,white)] content-stretch flex gap-[12px] items-start px-[16px] py-[11px] relative shrink-0 w-full" data-node-id="190:5508" data-name="ListItem [Switcher]">
+                <div className="content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start min-w-px pb-[2px] relative" data-node-id="I190:5508;39894:12517" data-name="Content">
+                  <div className="content-stretch flex gap-[6px] items-start relative shrink-0 w-full" data-node-id="I190:5508;39894:12518" data-name="TopContent">
+                    <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/m20,20px)] min-w-px relative text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/m20,15px)]" data-node-id="I190:5508;39894:12519">
+                      Пуш уведомления
+                    </p>
+                  </div>
+                </div>
+                <div className="h-[21px] relative shrink-0 w-[40px]" data-node-id="I190:5508;39894:12513" data-name="x/Switcher">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgXSwitcher} />
+                </div>
+              </div>
+              <div className="bg-[var(--bg\/elevation1,white)] content-stretch flex gap-[12px] items-start px-[16px] py-[11px] relative shrink-0 w-full" data-node-id="190:5509" data-name="ListItem [Switcher]">
+                <div className="content-stretch flex flex-[1_0_0] flex-col gap-[2px] items-start min-w-px pb-[2px] relative" data-node-id="I190:5509;39894:12517" data-name="Content">
+                  <div className="content-stretch flex gap-[6px] items-start relative shrink-0 w-full" data-node-id="I190:5509;39894:12518" data-name="TopContent">
+                    <p className="[word-break:break-word] flex-[1_0_0] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/m20,20px)] min-w-px relative text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/m20,15px)]" data-node-id="I190:5509;39894:12519">
+                      Письма на почту
+                    </p>
+                  </div>
+                </div>
+                <XSwitcher active={false} className="h-[21px] relative shrink-0 w-[40px]" />
+              </div>
+            </div>
+            <div className="h-[16px] relative shrink-0 w-px" data-node-id="190:5510" data-name="Spacing / 16" />
+            <div className="content-stretch flex flex-col isolate items-start px-[16px] relative shrink-0 w-full" data-node-id="190:5511" data-name="Input_Fieldset">
+              <div className="content-stretch flex flex-col items-start relative shrink-0 w-full z-[5]" data-node-id="I190:5511;40460:40613" data-name="Text holder">
+                <div className="content-stretch flex flex-col items-start relative shrink-0 w-full" data-node-id="I190:5511;40460:40614" data-name="Title">
+                  <div className="content-stretch flex gap-[4px] items-end relative shrink-0 w-full" data-node-id="I190:5511;40460:40614;26172:66934" data-name="Label holder">
+                    <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Bold')] font-[var(--font\/weight\/bold,normal)] leading-[var(--font\/line-height\/h50,20px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/h50,16px)] whitespace-nowrap" data-node-id="I190:5511;40460:40614;26172:66935">
+                      Название подборки
+                    </p>
+                  </div>
+                </div>
+                <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-[40px]" data-node-id="I190:5511;40460:40616" data-name="Padding">
+                  <div className="h-[12px] relative shrink-0 w-full" data-node-id="I190:5511;40460:40616;2167:11411" data-name="Spacer" />
+                </div>
+              </div>
+              <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch flex gap-[4px] items-start overflow-clip pb-[var(--controls\/bottom,13px)] pl-[var(--controls\/start,16px)] pr-[var(--controls\/end,12px)] pt-[var(--controls\/top,11px)] relative rounded-[var(--rad\=12,12px)] shrink-0 w-full z-[4]" data-node-id="I190:5511;40460:38298" data-name="Input">
+                <div className="content-stretch flex flex-[1_0_0] gap-[6px] items-center min-w-px relative" data-node-id="I190:5511;40460:38298;160534:13332" data-name="Content">
+                  <div className="content-stretch flex items-center relative shrink-0" data-node-id="I190:5511;40460:38298;40460:28300" data-name="Text holder">
+                    <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/m20,20px)] overflow-hidden relative shrink-0 text-[15px] text-[color:var(--components\/control\/text\/secondary,#757575)] text-ellipsis whitespace-nowrap" data-node-id="I190:5511;40460:38298;40460:28302">
+                      Менеджеры, продажи
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <DropdownFieldset className="h-0 relative shrink-0 w-full z-[3]" />
+            </div>
+            <div className="h-[8px] relative shrink-0 w-px" data-node-id="190:5512" data-name="Spacing / 08" />
+            <div className="content-stretch flex flex-col items-start px-[var(--avito-layout-page-inset-horizontal,16px)] relative shrink-0 w-full" data-node-id="190:5513">
+              <p className="[word-break:break-word] font-['CoFo_Avito_Text:Bold'] leading-[20px] not-italic relative shrink-0 text-[14px] text-black whitespace-nowrap" data-node-id="190:5514">
+                Фильтры:
+              </p>
+              <div className="content-stretch flex flex-col items-start justify-center relative shrink-0 w-[40px]" data-node-id="190:5515" data-name="Padding">
+                <div className="h-[12px] relative shrink-0 w-full" data-node-id="I190:5515;2167:11411" data-name="Spacer" />
+              </div>
+              <div className="content-stretch flex gap-[var(--avito-layout-space-6,6px)] items-center relative shrink-0" data-node-id="190:5516">
+                <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[30px] items-center justify-center min-h-[30px] min-w-[30px] pb-[var(--button\/xs\/padding\/bottom,8px)] pl-[var(--button\/xs\/padding\/start,8px)] pr-[var(--button\/xs\/padding\/end,8px)] pt-[var(--button\/xs\/padding\/top,6px)] relative rounded-[var(--button\/xs\/radius\/square,10px)] shrink-0" data-node-id="190:5517" data-name="Chips">
+                  <div className="content-stretch flex flex-col h-full items-center justify-center overflow-clip relative shrink-0" data-node-id="I190:5517;134937:22593" data-name="Icon left">
+                    <div className="h-[16px] relative shrink-0 w-[10px]" data-node-id="I190:5517;134937:22593;30:742" data-name="Icon">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon5} />
+                    </div>
+                  </div>
+                  <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5517;134937:22594" data-name="Pad-between" />
+                  <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5517;134937:22595">
+                    Продажи
+                  </p>
+                  <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5517;134937:22596" data-name="Pad-between" />
+                  <div className="h-full relative shrink-0 w-px" data-node-id="I190:5517;134937:22598" data-name="Pad-between-last" />
+                </div>
+                <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[30px] items-center justify-center min-h-[30px] min-w-[30px] pb-[var(--button\/xs\/padding\/bottom,8px)] pl-[var(--button\/xs\/padding\/start,8px)] pr-[var(--button\/xs\/padding\/end,8px)] pt-[var(--button\/xs\/padding\/top,6px)] relative rounded-[var(--button\/xs\/radius\/square,10px)] shrink-0" data-node-id="190:5518" data-name="Chips">
+                  <div className="content-stretch flex flex-col h-full items-center justify-center overflow-clip relative shrink-0" data-node-id="I190:5518;134937:22593" data-name="Icon left">
+                    <div className="h-[16px] relative shrink-0 w-[10px]" data-node-id="I190:5518;134937:22593;30:742" data-name="Icon">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon5} />
+                    </div>
+                  </div>
+                  <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5518;134937:22594" data-name="Pad-between" />
+                  <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5518;134937:22595">
+                    Без опыта
+                  </p>
+                  <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5518;134937:22596" data-name="Pad-between" />
+                  <div className="h-full relative shrink-0 w-px" data-node-id="I190:5518;134937:22598" data-name="Pad-between-last" />
+                </div>
+                <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[30px] items-center justify-center min-h-[30px] min-w-[30px] pb-[var(--button\/xs\/padding\/bottom,8px)] pl-[var(--button\/xs\/padding\/start,8px)] pr-[var(--button\/xs\/padding\/end,8px)] pt-[var(--button\/xs\/padding\/top,6px)] relative rounded-[var(--button\/xs\/radius\/square,10px)] shrink-0" data-node-id="190:5519" data-name="Chips">
+                  <div className="content-stretch flex flex-col h-full items-center justify-center overflow-clip relative shrink-0" data-node-id="I190:5519;134937:22593" data-name="Icon left">
+                    <div className="h-[16px] relative shrink-0 w-[10px]" data-node-id="I190:5519;134937:22593;30:742" data-name="Icon">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon5} />
+                    </div>
+                  </div>
+                  <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5519;134937:22594" data-name="Pad-between" />
+                  <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5519;134937:22595">
+                    Без резюме
+                  </p>
+                  <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5519;134937:22596" data-name="Pad-between" />
+                  <div className="h-full relative shrink-0 w-px" data-node-id="I190:5519;134937:22598" data-name="Pad-between-last" />
+                </div>
+                <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[30px] items-center justify-center min-h-[30px] min-w-[30px] pb-[var(--button\/xs\/padding\/bottom,8px)] pl-[var(--button\/xs\/padding\/start,8px)] pr-[var(--button\/xs\/padding\/end,8px)] pt-[var(--button\/xs\/padding\/top,6px)] relative rounded-[var(--button\/xs\/radius\/square,10px)] shrink-0" data-node-id="190:5520" data-name="Chips">
+                  <div className="content-stretch flex flex-col h-full items-center justify-center overflow-clip relative shrink-0" data-node-id="I190:5520;134937:22593" data-name="Icon left">
+                    <div className="h-[16px] relative shrink-0 w-[10px]" data-node-id="I190:5520;134937:22593;30:742" data-name="Icon">
+                      <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon5} />
+                    </div>
+                  </div>
+                  <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5520;134937:22594" data-name="Pad-between" />
+                  <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5520;134937:22595">
+                    Гибкий график
+                  </p>
+                  <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5520;134937:22596" data-name="Pad-between" />
+                  <div className="h-full relative shrink-0 w-px" data-node-id="I190:5520;134937:22598" data-name="Pad-between-last" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="bg-[var(--bg\/elevation1,white)] content-stretch flex flex-col items-center overflow-clip relative shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_var(--effect-settings1\/blur,3px)_var(--effect-settings1\/spread,0px)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_var(--effect-settings2\/blur,24px)_var(--effect-settings2\/spread,0px)_var(--l\/transparent2,rgba(0,0,0,0))] shrink-0 w-full" data-node-id="190:5521" data-name="FloatingContainer">
+            <div className="content-stretch flex flex-col items-start p-[10px] relative shrink-0 w-full" data-node-id="I190:5521;179290:27062" data-name="ButtonContainer">
+              <div className="content-stretch flex flex-col gap-[6px] items-start relative shrink-0 w-full" data-node-id="I190:5521;179290:27063" data-name="Elements/Button">
+                <div className="bg-[var(--components\/button\/bg\/primary,#141414)] content-stretch flex items-center justify-center min-h-[52px] min-w-[52px] pb-[var(--button\/l\/padding\/bottom,17px)] pl-[var(--button\/l\/padding\/start,15px)] pr-[var(--button\/l\/padding\/end,15px)] pt-[var(--button\/l\/padding\/top,15px)] relative rounded-[var(--button\/l\/radius\/square,16px)] shrink-0 w-full" data-node-id="I190:5521;179290:27063;121905:5246" data-name="Button">
+                  <div className="flex flex-row items-center self-stretch" data-node-id="I190:5521;179290:27063;121905:5246;124001:71282">
+                    <div className="h-full relative shrink-0 w-[4px]" data-name="Pad-between" />
+                  </div>
+                  <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/m20,20px)] relative shrink-0 text-[color:var(--components\/button\/text\/primary,white)] text-[length:var(--font\/size\/m20,15px)] whitespace-nowrap" data-node-id="I190:5521;179290:27063;121905:5246;124001:71283">
+                    Добавить
+                  </p>
+                  <div className="flex flex-row items-center self-stretch" data-node-id="I190:5521;179290:27063;121905:5246;124001:71284">
+                    <div className="h-full relative shrink-0 w-[4px]" data-name="Pad-between" />
+                  </div>
+                  <div className="flex flex-row items-center self-stretch" data-node-id="I190:5521;179290:27063;121905:5246;124001:71286">
+                    <div className="h-full relative shrink-0 w-px" data-name="Pad-between-last" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="h-[34px] relative shrink-0 w-full" data-node-id="I190:5521;179290:27067" data-name="iOS_HomeIndicator">
+              <div className="-translate-x-1/2 absolute bg-[var(--text\/primary,black)] bottom-[8px] h-[5px] left-1/2 rounded-[3px] w-[134px]" data-node-id="I190:5521;179290:27067;50248:19356" data-name="Home Indicator" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: M20 · <P dense>: Font(family: "font/family/family", style: font/weight/Regular, size: font/size/M20, weight: 400, lineHeight: font/line-height/M20, letterSpacing: 0), S20 · <P size=s dense>: Font(family: "font/family/family", style: font/weight/Regular, size: font/size/S20, weight: 400, lineHeight: font/line-height/S20, letterSpacing: 0), Shadow: Effect(type: DROP_SHADOW, color: l/transparent2, offset: (Effect-settings2/x, Effect-settings2/y), radius: Effect-settings2/blur, spread: Effect-settings2/spread); Effect(type: DROP_SHADOW, color: l/transparent1, offset: (Effect-settings1/x, Effect-settings1/y), radius: Effect-settings1/blur, spread: Effect-settings1/spread), black: #000000, blue500: #00AAFF, white: #FFFFFF, gray54: #757575, gray4: #F5F5F5, warmgray4: #F2F1F0, XS10 · <P size=xs>: Font(family: "Manrope_Cut_008", style: Medium, size: 11, weight: 500, lineHeight: 14, letterSpacing: 0), H25 · <H3 size=2xl>: Font(family: "font/family/family", style: font/weight/Bold, size: font/size/H25, weight: 700, lineHeight: font/line-height/H25, letterSpacing: 0), M10 · <P>: Font(family: "font/family/family", style: font/weight/Regular, size: font/size/M10, weight: 400, lineHeight: font/line-height/M10, letterSpacing: 0), H50 · <H5>: Font(family: "font/family/family", style: font/weight/Bold, size: font/size/H50, weight: 700, lineHeight: font/line-height/H50, letterSpacing: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Arrow Left
+**Node ID:** 190:136
+
+arrow, left, navigation, direction, back, next, move, proceed, indicator, pointer
+
+## Input
+**Node ID:** 190:117
+
+Реализовано: Web, Kitty, iOS, Android Не все возможности компонента реализованы — проверяйте в коде
+
+**Documentation:**
+- [https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Input](https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Input)
+
+## Search
+**Node ID:** 190:469
+
+search, find, magnify, lookup / поиск, найти, лупа, искать
+
+## Location
+**Node ID:** 190:94
+
+geo, location, метка, гео, геолокация, локация, расположение, геопозиция
+
+## Filter
+**Node ID:** 190:4657
+
+Filter, фильтер, настройка, настройки, фильтрация
+
+## Chips
+**Node ID:** 190:55
+
+Реализовано: Web, Kitty, iOS, Android Не все возможности компонента реализованы — проверяйте в коде
+
+**Documentation:**
+- [https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Chips](https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Chips)
+
+## Expand More
+**Node ID:** 190:459
+
+more, expand, show more, open / больше, развернуть, показать ещё
+
+## Sort
+**Node ID:** 190:139
+
+сортировка, sorting
+
+## Favorites
+**Node ID:** 190:4755
+
+heart, like, лайк, нравится, сердце, сердечко
+
+## Verified
+**Node ID:** 190:530
+
+проверено, check, галочка, галка
+
+## Grade Filled
+**Node ID:** 190:538
+
+Звезда, рейтинг, Grade
+
+## Foot Passenger
+**Node ID:** 190:563
+
+пешеход, pedestrian, footpassenger, footer, foot-slogger, пешком, идти пешком, человек
+
+## Button
+**Node ID:** 190:666
+
+✅ All \[Есть в коде\] / [Стили и состояния контролов](https://www.figma.com/file/2C5xkwmZDyQOE60BmNYTKs/%5B'23%5D-%D0%A1%D0%BF%D0%B5%D1%86%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8?type=design&node-id=4215%3A106688&mode=design&t=6Rsy3N8HGchDDudc-1)
+
+## TabBar
+**Node ID:** 190:3765
+
+✅ iOS, Android
+
+## Spacer
+**Node ID:** 190:3538
+
+Нет в коде
+
+## Favorites
+**Node ID:** 190:3384
+
+heart, like, лайк, нравится, сердце, сердечко
+
+## Chat
+**Node ID:** 190:3416
+
+Chat, чат, мессенджер, сообщения, сообщение, баблик, бабл, bubble
+
+## Avatar
+**Node ID:** 190:3446
+
+✅ iOS, Android, Web
+
+## Preset=Default
+**Node ID:** 190:143
+
+✅ iOS, Android, MAV, BDUI (iOS, Android, MAV)
+
+## Spacer
+**Node ID:** 190:148
+
+Реализовано: Web, Kitty  
+Не все возможности компонента реализованы — проверяйте в коде | Через **Shift+G** можно включать и отключать отступы как сетку
+
+**Documentation:**
+- [https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Spacer](https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Spacer)
+
+## ListItem [Switcher]
+**Node ID:** 190:192
+
+Реализовано: Web, Kitty, iOS, Android  
+Не все возможности компонента реализованы — проверяйте в коде
+
+**Documentation:**
+- [https://nephakt.k.avito.ru/?platform=kitty&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Switcher](https://nephakt.k.avito.ru/?platform=kitty&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Switcher)
+
+## x/Switcher
+**Node ID:** 190:185
+
+Реализовано: Web, Kitty, iOS, Android Не все возможности компонента реализованы — проверяйте в коде
+
+**Documentation:**
+- [https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Switcher](https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Switcher)
+
+## Input_Fieldset
+**Node ID:** 190:210
+
+Реализовано: Web, Kitty, iOS, Android Не все возможности компонента реализованы — проверяйте в коде
+
+**Documentation:**
+- [https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Input](https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Input)
+
+## Title
+**Node ID:** 190:220
+
+Реализовано: iOS Не все возможности компонента реализованы — проверяйте в коде
+
+## Dropdown [Fieldset]
+**Node ID:** 190:232
+
+Реализовано: Web, Kitty Не все возможности компонента реализованы — проверяйте в коде
+
+**Documentation:**
+- [https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Dropdown](https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Dropdown)
+
+## Delete
+**Node ID:** 190:239
+
+delete, remove, trash, bin / удалить, корзина, убрать
+
+## FloatingContainer
+**Node ID:** 190:272
+
+Реализовано: iOS, Android Не все возможности компонента реализованы — проверяйте в коде
+
+## Button
+**Node ID:** 190:243
+
+Реализовано: Web, Kitty, iOS, Android Не все возможности компонента реализованы — проверяйте в коде
+
+**Documentation:**
+- [https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Button](https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Button)
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

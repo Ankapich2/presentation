@@ -1,0 +1,289 @@
+const imgIcon = "https://www.figma.com/api/mcp/asset/95b2c840-c76f-447d-8b1f-d55d7c997ff0.svg";
+const imgIcon1 = "https://www.figma.com/api/mcp/asset/e19bc623-c9ea-4c2f-bb5a-a56fb8247c44.svg";
+const imgIcon2 = "https://www.figma.com/api/mcp/asset/ad82bffe-b9da-4ea4-a296-9ca84fb32d3a.svg";
+const imgIcon3 = "https://www.figma.com/api/mcp/asset/2de73bac-df24-4652-9dff-f07cee9b7fe4.svg";
+const imgIcon4 = "https://www.figma.com/api/mcp/asset/90fd98bd-1268-48bd-88ff-0e3ed64fb9cf.svg";
+const imgArrowLeft = "https://www.figma.com/api/mcp/asset/c706472b-ce6d-4d5e-9753-64ee791b900b.svg";
+const imgAssistantChats = "https://www.figma.com/api/mcp/asset/b3610e2d-c96f-4bf6-8211-375a62bc635f.svg";
+const imgLocationAvitoDs = "https://www.figma.com/api/mcp/asset/788ab2dd-406e-4976-8e73-c97e99adcb47.svg";
+const imgIcon5 = "https://www.figma.com/api/mcp/asset/2f7cbf47-d8f2-4176-97cb-0122060d33c7.svg";
+const imgFilterAvitoDs = "https://www.figma.com/api/mcp/asset/a8747aac-fca3-4c98-b00f-955b17dabd75.svg";
+
+type CelebProps = {
+  className?: string;
+  size?: "M";
+};
+
+function Celeb({ className, size = "M" }: CelebProps) {
+  return (
+    <div className={className || "content-stretch flex items-center overflow-clip relative"} data-node-id="190:114">
+      <div className="h-[20px] relative shrink-0 w-[14px]" data-node-id="190:115" data-name="Icon">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon} />
+      </div>
+    </div>
+  );
+}
+
+type PostamatProps = {
+  className?: string;
+  size?: "M";
+};
+
+function Postamat({ className, size = "M" }: PostamatProps) {
+  return (
+    <div className={className || "content-stretch flex items-center relative"} data-node-id="190:110">
+      <div className="h-[20px] relative shrink-0 w-[12px]" data-node-id="190:111" data-name="Icon">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon1} />
+      </div>
+    </div>
+  );
+}
+
+type PersonsProps = {
+  className?: string;
+  size?: "M";
+};
+
+function Persons({ className, size = "M" }: PersonsProps) {
+  return (
+    <div className={className || "content-stretch flex flex-col items-start overflow-clip relative"} data-node-id="190:106">
+      <div className="h-[20px] relative shrink-0 w-[14px]" data-node-id="190:107" data-name="Icon">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon2} />
+      </div>
+    </div>
+  );
+}
+
+type TimeProps = {
+  className?: string;
+  size?: "M";
+};
+
+function Time({ className, size = "M" }: TimeProps) {
+  return (
+    <div className={className || "content-stretch flex flex-col items-start overflow-clip relative"} data-node-id="190:102">
+      <div className="h-[20px] relative shrink-0 w-[14px]" data-node-id="190:103" data-name="Icon">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon3} />
+      </div>
+    </div>
+  );
+}
+
+type FlashProps = {
+  className?: string;
+  size?: "M";
+};
+
+function Flash({ className, size = "M" }: FlashProps) {
+  return (
+    <div className={className || "content-stretch flex items-center overflow-clip relative"} data-node-id="190:98">
+      <div className="h-[20px] relative shrink-0 w-[12px]" data-node-id="190:99" data-name="Icon">
+        <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon4} />
+      </div>
+    </div>
+  );
+}
+
+type ComponentProps = {
+  className?: string;
+  propValue?: string;
+};
+
+function Component({ className, propValue = "Москва, ул. Пушкина, 33" }: ComponentProps) {
+  return (
+    <div className={className || "bg-[#e3e8f5] content-stretch flex flex-col gap-[var(--avito-layout-space-24,24px)] items-start overflow-clip pb-[var(--avito-layout-space-24,24px)] pt-[60px] px-[var(--avito-layout-page-inset-horizontal,16px)] relative rounded-bl-[24px] rounded-br-[24px] w-[375px]"} data-node-id="190:4664" data-name="Подложка">
+      <div className="content-stretch flex h-[40px] items-center justify-between relative shrink-0 w-[343px]" data-node-id="190:4665">
+        <div className="relative shrink-0 size-[24px]" data-node-id="190:4666" data-name="Arrow Left">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgArrowLeft} />
+        </div>
+        <div className="content-stretch flex isolate items-end relative shrink-0 w-[229px]" data-node-id="190:4667" data-name="TabGroup">
+          <div className="content-stretch flex flex-[1_0_0] gap-[8px] items-start min-w-px overflow-clip relative z-[2]" data-node-id="I190:4667;5249:24880" data-name="Tabs holder">
+            <div className="content-stretch flex gap-[4px] items-start pr-[10px] relative shrink-0" data-node-id="I190:4667;5249:22885" data-name="Elements/Tab">
+              <div className="border-[var(--components\/tabgroup\/selected,black)] border-b-3 border-solid content-stretch flex items-start pb-[12px] relative shrink-0" data-node-id="I190:4667;5249:22885;5249:22953" data-name="Text holder">
+                <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Bold')] font-[var(--font\/weight\/bold,normal)] leading-[var(--font\/line-height\/h60,18px)] relative shrink-0 text-[color:var(--components\/tabgroup\/selected,black)] text-[length:var(--font\/size\/h60,14px)] whitespace-nowrap" data-node-id="I190:4667;5249:22885;5249:22954">
+                  Ищу работу
+                </p>
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[4px] items-start pr-[10px] relative shrink-0" data-node-id="I190:4667;5249:22886" data-name="Elements/Tab">
+              <div className="content-stretch flex items-start pb-[12px] relative shrink-0" data-node-id="I190:4667;5249:22886;5249:22958" data-name="Text holder">
+                <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Bold')] font-[var(--font\/weight\/bold,normal)] leading-[var(--font\/line-height\/h60,18px)] relative shrink-0 text-[#9aa1b3] text-[length:var(--font\/size\/h60,14px)] whitespace-nowrap" data-node-id="I190:4667;5249:22886;5249:22959">
+                  Ищу cотрудников
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="absolute bg-[#9aa1b3] bottom-0 h-[2px] left-0 right-0 z-[1]" data-node-id="I190:4667;5249:22893" data-name="Bottom Line" />
+        </div>
+        <div className="relative shrink-0 size-[24px]" data-node-id="190:4668" data-name="Assistant Chats">
+          <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgAssistantChats} />
+        </div>
+      </div>
+      <div className="content-stretch flex flex-col gap-[var(--avito-layout-space-32,32px)] items-start relative shrink-0 w-full" data-node-id="190:4669">
+        <div className="content-stretch flex flex-col gap-[var(--avito-layout-space-10,10px)] items-center relative shrink-0 w-full" data-node-id="190:4670">
+          <p className="[word-break:break-word] font-['CoFo_Avito_Text:Bold'] leading-[26px] min-w-full not-italic relative shrink-0 text-[24px] text-black text-center w-[min-content]" data-node-id="190:4671">
+            Найдите подходящее
+          </p>
+          <div className="content-stretch flex gap-[var(--avito-layout-space-6,6px)] items-center relative shrink-0" data-node-id="190:4672">
+            <div className="relative shrink-0 size-[14px]" data-node-id="190:4673" data-name="Location — Avito DS">
+              <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgLocationAvitoDs} />
+            </div>
+            <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[16px] not-italic relative shrink-0 text-[13px] text-black text-center whitespace-nowrap" data-node-id="190:4674">
+              {propValue}
+            </p>
+          </div>
+        </div>
+        <div className="content-stretch flex flex-col gap-[var(--avito-layout-space-16,16px)] items-start relative shrink-0 w-full" data-node-id="190:4675">
+          <div className="content-stretch flex flex-col gap-[var(--avito-layout-space-6,6px)] items-center relative shrink-0 w-full" data-node-id="190:4676">
+            <div className="content-stretch flex gap-[var(--avito-layout-space-6,6px)] items-start justify-center relative shrink-0" data-node-id="190:4677">
+              <div className="content-stretch flex flex-col gap-[var(--avito-layout-space-8,8px)] items-start overflow-clip p-[var(--avito-layout-space-10,10px)] relative rounded-[12px] shrink-0 w-[124px]" data-node-id="190:4678">
+                <div aria-hidden className="absolute bg-[rgba(255,255,255,0.55)] inset-0 pointer-events-none rounded-[12px]" />
+                <Flash className="content-stretch flex items-center overflow-clip relative shrink-0" />
+                <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[15px] not-italic relative shrink-0 text-[12px] text-black whitespace-nowrap" data-node-id="I190:4678;12:19929">
+                  Быстрые деньги
+                </p>
+                <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_5px_0px_rgba(255,255,255,0.5)]" />
+              </div>
+              <div className="content-stretch flex flex-col gap-[var(--avito-layout-space-8,8px)] items-start overflow-clip p-[var(--avito-layout-space-10,10px)] relative rounded-[12px] shrink-0 w-[124px]" data-node-id="190:4679">
+                <div aria-hidden className="absolute bg-[rgba(255,255,255,0.55)] inset-0 pointer-events-none rounded-[12px]" />
+                <Time className="content-stretch flex flex-col items-start overflow-clip relative shrink-0" />
+                <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[15px] not-italic relative shrink-0 text-[12px] text-black whitespace-nowrap" data-node-id="I190:4679;12:19929">
+                  Без работы
+                </p>
+                <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_5px_0px_rgba(255,255,255,0.5)]" />
+              </div>
+            </div>
+            <div className="content-stretch flex gap-[var(--avito-layout-space-6,6px)] items-center relative shrink-0 w-full" data-node-id="190:4680">
+              <div className="content-stretch flex flex-col gap-[var(--avito-layout-space-8,8px)] items-start overflow-clip p-[var(--avito-layout-space-10,10px)] relative rounded-[12px] shrink-0 w-[110px]" data-node-id="190:4681">
+                <div aria-hidden className="absolute bg-[rgba(255,255,255,0.55)] inset-0 pointer-events-none rounded-[12px]" />
+                <Persons className="content-stretch flex flex-col items-start overflow-clip relative shrink-0" />
+                <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[15px] not-italic relative shrink-0 text-[12px] text-black whitespace-nowrap" data-node-id="I190:4681;12:19929">
+                  Студентам
+                </p>
+                <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_5px_0px_rgba(255,255,255,0.5)]" />
+              </div>
+              <div className="content-stretch flex flex-col gap-[var(--avito-layout-space-8,8px)] items-start overflow-clip p-[var(--avito-layout-space-10,10px)] relative rounded-[12px] shrink-0 w-[110px]" data-node-id="190:4682">
+                <div aria-hidden className="absolute bg-[rgba(255,255,255,0.55)] inset-0 pointer-events-none rounded-[12px]" />
+                <Postamat className="content-stretch flex items-center relative shrink-0" />
+                <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[15px] not-italic relative shrink-0 text-[12px] text-black whitespace-nowrap" data-node-id="I190:4682;12:19929">
+                  Подработка
+                </p>
+                <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_5px_0px_rgba(255,255,255,0.5)]" />
+              </div>
+              <div className="content-stretch flex flex-col gap-[var(--avito-layout-space-8,8px)] items-start overflow-clip p-[var(--avito-layout-space-10,10px)] relative rounded-[12px] shrink-0 w-[110px]" data-node-id="190:4683">
+                <div aria-hidden className="absolute bg-[rgba(255,255,255,0.55)] inset-0 pointer-events-none rounded-[12px]" />
+                <Celeb className="content-stretch flex items-center overflow-clip relative shrink-0" />
+                <p className="[word-break:break-word] font-['CoFo_Avito_Text:Regular'] leading-[15px] not-italic relative shrink-0 text-[12px] text-black whitespace-nowrap" data-node-id="I190:4683;12:19929">
+                  Первый опыт
+                </p>
+                <div className="absolute inset-0 pointer-events-none rounded-[inherit] shadow-[inset_0px_0px_5px_0px_rgba(255,255,255,0.5)]" />
+              </div>
+            </div>
+          </div>
+          <div className="content-stretch flex gap-[var(--avito-layout-space-6,6px)] items-center relative shrink-0 w-full" data-node-id="190:4684">
+            <div className="bg-white content-stretch flex flex-[1_0_0] gap-[4px] items-start min-w-px overflow-clip pb-[var(--controls\/bottom,17px)] pl-[var(--controls\/start,18px)] pr-[var(--controls\/end,16px)] pt-[var(--controls\/top,15px)] relative rounded-[var(--rad\=12,12px)]" data-node-id="190:4685" data-name="Input">
+              <div className="content-stretch flex flex-col items-center justify-center overflow-clip relative shrink-0 w-[20px]" data-node-id="I190:4685;40460:28298" data-name="Icon left">
+                <div className="h-[20px] relative shrink-0 w-[14px]" data-node-id="I190:4685;40460:28298;30:545" data-name="Icon">
+                  <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgIcon5} />
+                </div>
+              </div>
+              <div className="content-stretch flex flex-[1_0_0] gap-[6px] items-center min-w-px relative" data-node-id="I190:4685;160534:13332" data-name="Content">
+                <div className="content-stretch flex items-center relative shrink-0" data-node-id="I190:4685;40460:28300" data-name="Text holder">
+                  <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/m20,20px)] overflow-hidden relative shrink-0 text-[15px] text-[color:var(--components\/control\/text\/secondary,#757575)] text-ellipsis whitespace-nowrap" data-node-id="I190:4685;40460:28302">
+                    Например, курьер
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="bg-white content-stretch flex gap-[var(--avito-layout-space-10,10px)] items-center overflow-clip p-[15px] relative rounded-[12px] shrink-0 size-[52px]" data-node-id="190:4686" data-name="Filter button / Avito DS">
+              <div className="relative shrink-0 size-[21px]" data-node-id="190:4687" data-name="Filter — Avito DS">
+                <img alt="" className="absolute block inset-0 max-w-none size-full" src={imgFilterAvitoDs} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default function Component1() {
+  return <Component className="bg-[#e3e8f5] content-stretch flex flex-col gap-[var(--avito-layout-space-24,24px)] items-start overflow-clip pb-[var(--avito-layout-space-24,24px)] pt-[60px] px-[var(--avito-layout-page-inset-horizontal,16px)] relative rounded-bl-[24px] rounded-br-[24px] size-full" />;
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: H60 · <H6>: Font(family: "font/family/family", style: font/weight/Bold, size: font/size/H60, weight: 700, lineHeight: font/line-height/H60, letterSpacing: 0), M20 · <P dense>: Font(family: "font/family/family", style: font/weight/Regular, size: font/size/M20, weight: 400, lineHeight: font/line-height/M20, letterSpacing: 0).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Arrow Left
+**Node ID:** 190:3778
+
+arrow, left, navigation, direction, back, next, move, proceed, indicator, pointer
+
+## TabGroup
+**Node ID:** 190:4426
+
+Реализовано: Web, Kitty, iOS, Android Не все возможности компонента реализованы — проверяйте в коде
+
+**Documentation:**
+- [https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/TabGroup](https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/TabGroup)
+
+## Assistant Chats
+**Node ID:** 190:4598
+
+Чаты, список, ассистент, чат, лист
+
+## Location
+**Node ID:** 190:94
+
+geo, location, метка, гео, геолокация, локация, расположение, геопозиция
+
+## Flash
+**Node ID:** 190:97
+
+flash, lightning, quick, urgent, fast / молния, срочно, быстро
+
+## Time
+**Node ID:** 190:101
+
+time, clock, watch, timer, hour / время, часы, таймер
+
+## Persons
+**Node ID:** 190:105
+
+persons, people, group, team, users / люди, группа, команда, пользователи
+
+## Postamat
+**Node ID:** 190:109
+
+postamat, parcel locker, delivery point, pickup / постамат, ПВЗ, доставка
+
+## Celeb
+**Node ID:** 190:113
+
+celeb, celebrity, star, popular, famous / знаменитость, звезда, популярный
+
+## Input
+**Node ID:** 190:117
+
+Реализовано: Web, Kitty, iOS, Android Не все возможности компонента реализованы — проверяйте в коде
+
+**Documentation:**
+- [https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Input](https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Input)
+
+## Search
+**Node ID:** 190:469
+
+search, find, magnify, lookup / поиск, найти, лупа, искать
+
+## Filter
+**Node ID:** 190:4657
+
+Filter, фильтер, настройка, настройки, фильтрация
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.

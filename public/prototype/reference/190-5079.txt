@@ -1,0 +1,79 @@
+export default function Frame2087326400() {
+  return (
+    <div className="content-stretch flex gap-[var(--avito-layout-space-6,6px)] items-center relative size-full" data-node-id="190:5079">
+      <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] border-[length:var(--weight\=2,2px)] border-[var(--border\/selected,black)] border-solid content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[36px] items-center justify-center min-h-[36px] min-w-[36px] pb-[var(--button\/s\/padding\/bottom,11px)] pl-[var(--button\/s\/padding\/start,11px)] pr-[var(--button\/s\/padding\/end,11px)] pt-[var(--button\/s\/padding\/top,9px)] relative rounded-[var(--button\/s\/radius\/square,12px)] shrink-0" data-node-id="190:5080" data-name="Chips">
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5080;135003:20578" data-name="Pad-between" />
+        <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5080;135003:20579">
+          Для вас
+        </p>
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5080;135003:20580" data-name="Pad-between" />
+        <div className="h-full relative shrink-0 w-px" data-node-id="I190:5080;135003:20582" data-name="Pad-between-last" />
+      </div>
+      <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[36px] items-center justify-center min-h-[36px] min-w-[36px] pb-[var(--button\/s\/padding\/bottom,11px)] pl-[var(--button\/s\/padding\/start,11px)] pr-[var(--button\/s\/padding\/end,11px)] pt-[var(--button\/s\/padding\/top,9px)] relative rounded-[var(--button\/s\/radius\/square,12px)] shrink-0" data-node-id="190:5081" data-name="Chips">
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5081;134937:22608" data-name="Pad-between" />
+        <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5081;134937:22609">
+          Работа до 17:00
+        </p>
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5081;134937:22610" data-name="Pad-between" />
+        <div className="h-full relative shrink-0 w-px" data-node-id="I190:5081;134937:22612" data-name="Pad-between-last" />
+      </div>
+      <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[36px] items-center justify-center min-h-[36px] min-w-[36px] pb-[var(--button\/s\/padding\/bottom,11px)] pl-[var(--button\/s\/padding\/start,11px)] pr-[var(--button\/s\/padding\/end,11px)] pt-[var(--button\/s\/padding\/top,9px)] relative rounded-[var(--button\/s\/radius\/square,12px)] shrink-0" data-node-id="190:5082" data-name="Chips">
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5082;134937:22608" data-name="Pad-between" />
+        <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5082;134937:22609">
+          Работа руками
+        </p>
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5082;134937:22610" data-name="Pad-between" />
+        <div className="h-full relative shrink-0 w-px" data-node-id="I190:5082;134937:22612" data-name="Pad-between-last" />
+      </div>
+      <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[36px] items-center justify-center min-h-[36px] min-w-[36px] pb-[var(--button\/s\/padding\/bottom,11px)] pl-[var(--button\/s\/padding\/start,11px)] pr-[var(--button\/s\/padding\/end,11px)] pt-[var(--button\/s\/padding\/top,9px)] relative rounded-[var(--button\/s\/radius\/square,12px)] shrink-0" data-node-id="190:5083" data-name="Chips">
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5083;134937:22608" data-name="Pad-between" />
+        <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5083;134937:22609">
+          Ночные смены
+        </p>
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5083;134937:22610" data-name="Pad-between" />
+        <div className="h-full relative shrink-0 w-px" data-node-id="I190:5083;134937:22612" data-name="Pad-between-last" />
+      </div>
+      <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[36px] items-center justify-center min-h-[36px] min-w-[36px] pb-[var(--button\/s\/padding\/bottom,11px)] pl-[var(--button\/s\/padding\/start,11px)] pr-[var(--button\/s\/padding\/end,11px)] pt-[var(--button\/s\/padding\/top,9px)] relative rounded-[var(--button\/s\/radius\/square,12px)] shrink-0" data-node-id="190:5084" data-name="Chips">
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5084;134937:22608" data-name="Pad-between" />
+        <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5084;134937:22609">
+          Работа из дома
+        </p>
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5084;134937:22610" data-name="Pad-between" />
+        <div className="h-full relative shrink-0 w-px" data-node-id="I190:5084;134937:22612" data-name="Pad-between-last" />
+      </div>
+      <div className="bg-[var(--components\/control\/bg\/default,#f2f1f0)] content-stretch drop-shadow-[var(--effect-settings1\/x,0px)_var(--effect-settings1\/y,1px)_calc(var(--effect-settings1\/blur,3px)/2)_var(--l\/transparent1,rgba(0,0,0,0)),var(--effect-settings2\/x,0px)_var(--effect-settings2\/y,4px)_calc(var(--effect-settings2\/blur,30px)/2)_var(--l\/transparent2,rgba(0,0,0,0))] flex h-[36px] items-center justify-center min-h-[36px] min-w-[36px] pb-[var(--button\/s\/padding\/bottom,11px)] pl-[var(--button\/s\/padding\/start,11px)] pr-[var(--button\/s\/padding\/end,11px)] pt-[var(--button\/s\/padding\/top,9px)] relative rounded-[var(--button\/s\/radius\/square,12px)] shrink-0" data-node-id="190:5085" data-name="Chips">
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5085;134937:22608" data-name="Pad-between" />
+        <p className="[word-break:break-word] font-[family-name:var(--font\/family\/family,'CoFo_Avito_Text:Regular')] font-[var(--font\/weight\/regular,normal)] leading-[var(--font\/line-height\/s20,16px)] relative shrink-0 text-[color:var(--components\/control\/text\/primary,black)] text-[length:var(--font\/size\/s20,13px)] whitespace-nowrap" data-node-id="I190:5085;134937:22609">
+          Все категории
+        </p>
+        <div className="h-full relative shrink-0 w-[3px]" data-node-id="I190:5085;134937:22610" data-name="Pad-between" />
+        <div className="h-full relative shrink-0 w-[8px]" data-node-id="I190:5085;134937:22611" data-name="Icon end" />
+        <div className="h-full relative shrink-0 w-px" data-node-id="I190:5085;134937:22612" data-name="Pad-between-last" />
+      </div>
+    </div>
+  );
+}
+SUPER CRITICAL: The generated React+Tailwind code MUST be converted to match the target project's technology stack and styling system.
+1. Analyze the target codebase to identify: technology stack, styling approach, component patterns, and design tokens
+2. Convert React syntax to the target framework/library
+3. Transform all Tailwind classes to the target styling system while preserving exact visual design
+4. Follow the project's existing patterns and conventions
+DO NOT install any Tailwind as a dependency unless the user instructs you to do so.
+
+Node ids have been added to the code as data attributes, e.g. `data-node-id="1:2"`.
+These styles are contained in the design: S20 · <P size=s dense>: Font(family: "font/family/family", style: font/weight/Regular, size: font/size/S20, weight: 400, lineHeight: font/line-height/S20, letterSpacing: 0), Shadow: Effect(type: DROP_SHADOW, color: l/transparent2, offset: (Effect-settings2/x, Effect-settings2/y), radius: Effect-settings2/blur, spread: Effect-settings2/spread); Effect(type: DROP_SHADOW, color: l/transparent1, offset: (Effect-settings1/x, Effect-settings1/y), radius: Effect-settings1/blur, spread: Effect-settings1/spread).
+Component descriptions: The following components have usage descriptions or documentation links defined in Figma. These descriptions provide important context about the intended usage, best practices, and any constraints for each component. Follow these guidelines when implementing or using these components.
+
+## Chips
+**Node ID:** 190:55
+
+Реализовано: Web, Kitty, iOS, Android Не все возможности компонента реализованы — проверяйте в коде
+
+**Documentation:**
+- [https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Chips](https://nephakt.k.avito.ru/?platform=web&version=3#/%D0%9A%D0%BE%D0%BC%D0%BF%D0%BE%D0%BD%D0%B5%D0%BD%D1%82%D1%8B/Chips)
+
+## Arrow Right
+**Node ID:** 190:84
+
+arrow, right, navigation, direction, forward, next, move, proceed, indicator, pointer
+Images and SVGs will be stored as constants, e.g. const image = 'https://www.figma.com/api/mcp/asset/550e8400-e29b-41d4-a716-446655440000.png'. These constants will be used in the code as the source for the image, ex: <img src={image} />. Image assets are stored on a remote server for 7 days and can be fetched using the provided URLs until they expire.
