@@ -27,19 +27,19 @@ const baseSlides: Record<SlideId, SlideDefinition> = {
   'history-1': {
     id: 'history-1', figmaNodeId: '35:179', title: 'Начало', background: 'paper',
     stickers: [
-      image('story', 'История начала', `${A}/history-1/info-exact.png?v=20261009`, 651, 297),
+      image('story', 'История начала', `${A}/history-1/info-exact.png?v=20261009-figma2`, 608.666667, 231.666667),
     ],
   },
   'history-2': {
     id: 'history-2', figmaNodeId: '35:201', title: 'Фриланс', background: 'paper',
     stickers: [
-      image('story', 'История фриланса', `${A}/history-2/info-exact.png?v=20261009`, 749, 304),
+      image('story', 'История фриланса', `${A}/history-2/info-exact.png?v=20261009-figma2`, 668.333333, 270.333333),
     ],
   },
   'history-3': {
     id: 'history-3', figmaNodeId: '35:223', title: 'Найм', background: 'paper',
     stickers: [
-      image('story', 'История найма', `${A}/history-3/info-exact.png?v=20261009`, 774, 327),
+      image('story', 'История найма', `${A}/history-3/info-exact.png?v=20261009-figma2`, 693.333333, 361.666667),
     ],
   },
   projects: {
@@ -50,8 +50,8 @@ const baseSlides: Record<SlideId, SlideDefinition> = {
     id: 'case-1', figmaNodeId: '207:7979', title: 'Тестовое', background: 'xp',
     stickers: [
       // Exports include the original rotation and translucent outer stroke.
-      image('brief', 'Задача', `${A}/case-1/info-brief-new.png?v=20261009`, 478, 284),
-      image('solution', 'Решение', `${A}/case-1/info-solution-new.png?v=20261009`, 483, 295),
+      image('brief', 'Задача', `${A}/case-1/info-brief-new.png?v=20261009-figma2`, 476.333333, 249.333333),
+      image('solution', 'Решение', `${A}/case-1/info-solution-new.png?v=20261009-figma2`, 583, 268),
     ],
   },
   'case-2': {
@@ -59,17 +59,17 @@ const baseSlides: Record<SlideId, SlideDefinition> = {
     stickers: [
       // Figma frame dimensions plus the 11px outer stroke on each side.
       // The PNG exports are 3×; render their full bounds at the original scale.
-      image('goal', 'Продуктовая цель', `${A}/case-2/info-goal-exact.png`, 468.37, 229),
-      image('research', 'Исследования', `${A}/case-2/info-research-exact.png`, 468.37, 229),
-      image('jobs', 'Job Story', `${A}/case-2/info-jobs-exact.png`, 468.37, 194),
-      image('entry', 'Новые входы', `${A}/case-2/info-entry-exact.png`, 468.37, 194),
-      image('saved', 'Сохранённые условия', `${A}/case-2/info-saved-exact.png`, 387, 194),
+      image('goal', 'Продуктовая цель', `${A}/case-2/info-goal-exact.png?v=20261009-figma2`, 468.666667, 229),
+      image('research', 'Исследования', `${A}/case-2/info-research-exact.png?v=20261009-figma2`, 468.666667, 229),
+      image('jobs', 'Job Story', `${A}/case-2/info-jobs-exact.png?v=20261009-figma2`, 468.666667, 194),
+      image('entry', 'Новые входы', `${A}/case-2/info-entry-exact.png?v=20261009-figma2`, 468.666667, 194),
+      image('saved', 'Сохранённые условия', `${A}/case-2/info-saved-exact.png?v=20261009-figma2`, 387, 194),
     ],
   },
   'case-3': {
     id: 'case-3', figmaNodeId: '202:7845', title: 'Прототип', background: 'xp',
     stickers: [
-      image('result', 'Результат', `${A}/case-3/info-prototype-exact.png?v=20261009`, 595, 300),
+      image('result', 'Результат', `${A}/case-3/info-prototype-exact.png?v=20261009-figma2`, 594.333333, 300),
     ],
   },
 };
