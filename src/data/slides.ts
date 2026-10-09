@@ -27,19 +27,19 @@ const baseSlides: Record<SlideId, SlideDefinition> = {
   'history-1': {
     id: 'history-1', figmaNodeId: '35:179', title: 'Начало', background: 'paper',
     stickers: [
-      image('story', 'История начала', `${A}/history-1/info-exact.png`, 651, 297),
+      image('story', 'История начала', `${A}/history-1/info-exact.png?v=20261009`, 651, 297),
     ],
   },
   'history-2': {
     id: 'history-2', figmaNodeId: '35:201', title: 'Фриланс', background: 'paper',
     stickers: [
-      image('story', 'История фриланса', `${A}/history-2/info-exact.png`, 749, 304),
+      image('story', 'История фриланса', `${A}/history-2/info-exact.png?v=20261009`, 749, 304),
     ],
   },
   'history-3': {
     id: 'history-3', figmaNodeId: '35:223', title: 'Найм', background: 'paper',
     stickers: [
-      image('story', 'История найма', `${A}/history-3/info-exact.png`, 774, 327),
+      image('story', 'История найма', `${A}/history-3/info-exact.png?v=20261009`, 774, 327),
     ],
   },
   projects: {
@@ -50,8 +50,8 @@ const baseSlides: Record<SlideId, SlideDefinition> = {
     id: 'case-1', figmaNodeId: '207:7979', title: 'Тестовое', background: 'xp',
     stickers: [
       // Exports include the original rotation and translucent outer stroke.
-      image('brief', 'Задача', `${A}/case-1/info-brief-new.png`, 478, 284),
-      image('solution', 'Решение', `${A}/case-1/info-solution-new.png`, 483, 295),
+      image('brief', 'Задача', `${A}/case-1/info-brief-new.png?v=20261009`, 478, 284),
+      image('solution', 'Решение', `${A}/case-1/info-solution-new.png?v=20261009`, 483, 295),
     ],
   },
   'case-2': {
@@ -69,7 +69,7 @@ const baseSlides: Record<SlideId, SlideDefinition> = {
   'case-3': {
     id: 'case-3', figmaNodeId: '202:7845', title: 'Прототип', background: 'xp',
     stickers: [
-      image('result', 'Результат', `${A}/case-3/info-prototype-exact.png`, 595, 300),
+      image('result', 'Результат', `${A}/case-3/info-prototype-exact.png?v=20261009`, 595, 300),
     ],
   },
 };
